@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Learn Javascript</title>
+</head>
+   <style>
+      body{
+         width: 100%;
+         height: 100vh;
+         font-family: helvetica;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      .main{
+         width: 98%;
+         position: absolute;
+         top: 30%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+      h1{
+         text-align: center;
+      }
+      table{
+         width: 100%;
+         color: #fff;
+         border: 1px solid #ddd;
+         border-collapse: collapse;
+         cursor: pointer;
+      }
+      table tr th{
+         padding: 12px;
+         border: 1px solid #ddd;
+         text-align: left;
+      }
+      table tr .td{
+         padding: 10px;
+         color: black;
+         background: #f2f2f2;
+         border: 1px solid #ddd;
+      }
+      table tr .td:hover{
+         background: #e2e2e2;
+      }
+      table tr th{
+         background: tomato;
+      }
+      table tr:nth-child(even){
+         background-color: #f2f2f2;
+      }
+      p{
+         width: 100%;
+         padding: 15px 25px;
+         background: #FFF3CD;
+         border: orange;
+         box-sizing: border-box;
+         text-align: center;
+      }
+      p span{
+         font-weight: 700;
+      }
+   </style>
+<body>
+   <div class="main">
+      <h1>Fake ID Checker</h1>
+      <table>
+         <tr>
+            <th>Name</th>
+            <th>State</th>
+            <th>Gender</th>
+         </tr>
+         <tr>
+            <td id="name" class="td">None</td>
+            <td id="state" class="td">None</td>
+            <td id="gender" class="td">None</td>
+         </tr>
+      </table>
+      <p><span>Please Note:</span> If You don't write anything as a Result will show "Real ID."</p>
+   </div>
+
+
+
+   <script src="./script.js"></script>
+</body>
+</html>
